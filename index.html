@@ -1,0 +1,199 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <title>Megni Energy Monitoring</title>
+
+  </head>
+  <body>
+    <div id="bound">
+          
+      <div id="header">
+        
+        <div id="title">Megni</div>
+            <div id="maintext">
+            Energy Monitoring
+                <div style="float:right">
+                    <a href="?iaith=cy">Cymraeg</a>
+                </div>
+            </div>
+        
+
+      </div>
+      <div id="box">
+        <div id="maintext">
+          <img src="images/snowdonia.jpg" style="width:930px; padding-top:20px"/>
+          <p>Technology that helps us live within ecological limits</p>
+        </div>
+      </div>
+      <div id="box">
+        <div id="maintext">
+          <h1>The OpenEnergyMonitor System</h1>
+          <h2>System Overview</h2>
+          <img src="images/oemfpsystemdiagram.png" style="float:left; padding-right:20px"/>
+          <p>The OpenEnergyMonitor.org system is an open-source monitoring system with the capability to monitor electricity, temperature, humidity and interface with pulse output utility meters.</p>
+          
+          <p>The system is made up of five main parts: the emonPi, emonTx, emonTH, emonGLCD, emonBase and emoncms. </p>
+          
+          <p>These can be assembled and configured to work for a variety of applications from  home energy monitoring to solar PV import/export monitoring and building fabric thermal performance monitoring.</p>
+          
+          <p>The system is fully open source both hardware and software with documentation on everything from AC theory to sensor circuit design and application programming available on the <a href="https://openenergymonitor.org/emon" >openenergymonitor.org</a> website.</p>
+          <p>&nbsp;</p>
+
+        </div>
+      </div>
+      
+
+      <div id="box">
+        <div id="maintext">
+          <h2>emonPi</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/E1M2uLSiQy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>The emonPi is an open-hardware Raspberry Pi and Arduino based web-connected energy and environmental monitoring unit. It sits next to the electricity meter box and measures electricity being used or generated via up to two clip on CT (Current Transformer) sensors and an AC-AC adapter to provide an AC voltage sample for Real Power and Power Factor calculations. Data can be logged locally to the Raspberry Pi's SD card or posted remotly via Etherent of WIFI to <a href="https://emoncms.org">emoncms.org</a></p>
+          
+          <p>In addition to CT based electricity monitoring the emonPi has a pulse counting input which can be used for interfacing with smart meters and certain types of water meters. It also has a DS18B20 digital temperature sensing input which supports multiple DS18B20 temperature sensors on a single bus.</p>
+          <p> In June 2015 we ran a succesful Kickstarter crowdfunding campaign for the emonPi, the video we made can be seen above.</p>
+          
+          <p><b>emonPi: </b><a href="https://openenergymonitor.org/emon/modules/emonpi">Documentation</a>, <a href="https://shop.openenergymonitor.com/emonpi/" >Shop</a>, <a href="httpss://www.kickstarter.com/projects/openenergymonitor/emonpi-open-hardware-raspberry-pi-based-energy-mon" >Kickstarter</a></p>
+          
+        </div>
+      </div>
+
+      <div id="box">
+        <div id="maintext">
+          <h2>emonTx</h2>
+          <img src="images/emontx.jpg" style="float:left; width:350px; padding-right:20px; padding-bottom:20px;"/>
+          <p>The emonTx is an energy monitoring node. Multiple emoonTx's can be used with a single emonPi or emonBase web-connected basestation. The emonTx sits next to the electricity meter box and measures electricity being used or generated via clip on CT (Current Transformer) sensors and an AC-AC adapter to power the unit and provide an AC voltage sample for Real Power and Power Factor calculations. </p>
+          
+          <p>In addition to CT based electricity monitoring the emonTx has a pulse counting input which can be used for interfacing with smart meters and certain types of water meters. It also has a DS18B20 digital temperature sensing input which supports multiple DS18B20 temperature sensors on a single bus.</p>
+          <p><b>emonTx: </b><a href="https://openenergymonitor.org/emon/modules/emonTxV3">Documentation</a>, <a href="https://shop.openenergymonitor.com/emontx-v3/" >Shop</a></p>
+          
+        </div>
+      </div>
+    
+      <div id="box">
+        <div id="maintext">
+        <h2>emonTH</h2>
+        <img src="images/emonth.png" style="float:left; width: 400px; padding-right:20px"/>
+        <p>The emonTH is a long lasting, easy to deploy wireless temperature and humidity sensing node designed for use in building thermal performance monitoring. The emonTH is powered by 2x AA batteries and is available with a choice of either DS18B20 based temperature sensing or DHT22 based Temperature and Humidity sensing. An external DS18B20 temperature sensor can easily be wired into screw terminal connector to provide external temperature readings.</p>
+        <p><b>emonTH: </b><a href="https://openenergymonitor.org/emon/modules/emonTH">Documentation</a>, <a href="https://shop.openenergymonitor.com/temperature-humidity-nodes/" >Shop</a></p>
+        <div style="clear:both;"></div>
+        </div>
+      </div>
+      
+      <div id="box">
+        <div id="maintext">
+                <img src="images/raspberrypi.png" style="float:right; width: 200px; padding-left:20px"/>
+        <h2>emonBase</h2>
+
+        <p>The emonBase is the internet gateway, relaying readings received wirelessly from sensor nodes to emoncms, which is an open source energy monitoring web application (see below). There are several basestation options but the recommended basestation is based on the Raspberry PI a popular low cost Linux computer. The RaspberryPI basestation can run a full LAMP web server with emoncms installed for local data-logging if used with an external harddrive or it can be configured to forward data directly to a remote server such as emoncms.org.</p>
+        <p><b>emonBase: </b><a href="https://openenergymonitor.org/emon/emonbase">Documentation</a>, <a href="https://shop.openenergymonitor.com/base-stations/" >Shop</a></p>
+                <div style="clear:both;"></div>
+        </div>
+      </div>
+      
+      <div id="box">
+        <div id="maintext">
+        <h2>Emoncms</h2>
+        <p><a href="https://emoncms.org/">Emoncms.org</a> is a powerful open-source web application for processing, storing, visualising energy and environmental data. One common application of emoncms is to explore historical electricity consumption data, zooming in at any point, either to see instantaneous power over seconds, minutes or hours or to see daily kWh use.</p>
+
+       
+        
+        </div>
+      </div>
+      
+      <div id="box">
+        <div id="maintext">
+        <h2>RF Radio</h2>
+        <p>The system uses a commonly used FSK RFM69CW RF transceiver module which operates on the ISM frequency bands (433Mhz) to enable two way communication between the hardware modules.</p>
+
+        <p><b>RFM69CW: </b><a href="https://openenergymonitor.org/emon/buildingblocks/rfm69cw">Documentation</a></p>
+        </div>
+      </div>
+      
+      <div id="box">
+        <div id="maintext">
+        <a href="https://arduino.cc" ><img src="images/arduino.jpeg" style="float:right; height:120px; padding-left:20px; padding-top:20px;"/></a>
+        <a href="https://www.raspberrypi.org/"><img src="images/raspilogo.png" style="float:right; height:120px; padding-left:20px; padding-top:20px"/></a>
+        <h2>Arduino and Raspberry Pi open platform</h2>
+
+        <p>The emonPi, emonTx, emonGLCD and Raspberry Pi wireless receiver board (RFM69Pi) is based on the Arduino platform, a popular open-source micro controller platform with a large community. This makes these modules fully configurable and adaptable for different applications with a little programming knowledge. The emonBase uses the Raspberry Pi popular low cost Linux computer platform.</p>
+                <div style="clear:both;"></div>
+        </div>
+      </div>
+      
+      <div id="box">
+        <div id="maintext">
+        <h2>OpenEnergyMonitor Online Shop</h2>
+        <p>The OpenEnergyMonitor system is available through the openenergymonitor shop. The system is currently primarily used by individuals, education institutions and companies with proficiency in electronics and software development. The system is a mixture of through hole electronics which are provided in kit form and pre-assembled surface mount boards. It is sold as a development kit, not yet a full commercial product.</p>
+
+        <p>Full pricing including volume pricing is available on the openenergymonitor shop:</p>
+
+        <p><a href="https://shop.openenergymonitor.com">shop.openenergymonitor.com</a></p>
+
+        <p>The OpenEnergyMonitor shop is run by Megni energy monitoring.</p>
+        </div>
+      </div>
+      
+      <div id="box">
+        <div id="maintext">
+        <h2>Megni and OpenEnergyMonitor</h2>
+        <p>Megni energy monitoring is run by Glyn Hudson and Trystan Lea. We are based in Snowdonia, North Wales. We are both also founders and core developers on the OpenEnergyMonitor project. The OpenEnergyMonitor project is its own entity separate from Megni it is an online open source community project with many developers from around the world contributing and using the technology for all sorts of different applications.</p>
+        </div>
+      </div>
+      
+      <div id="box">
+        <div id="maintext">
+          <img src="images/build.jpg" style="float:right; width:350px; padding-left:20px; padding-top:20px"/>
+          
+          <h2>Our Values</h2>
+          
+          <p><b>Technology that helps us live within ecological limits.</b><br>
+          The development of the system and its application is guided by the motivation to make the transition to sustainable energy in our own lives, we started by optimising electricity use in our own homes and understanding the contribution of solar pv generation, increasingly development is on measuring the performance of building fabric and sustainable heating systems and optimising the use of heating systems.</p>
+          
+          <p><b>Open-Source</b><br>
+          We use open-source technology developed by ourselves and others as a part of the OpenEnergyMonitor project. We believe open-source is a better way of doing things. You can learn more about this, how the technology works and how to build, repair and improve it, on the project website: <a href="https://openenergymonitor.org">openenergymonitor.org</a></p>
+          
+          <div style="clear:both;"></div>
+          
+        
+        </div>
+      </div>
+      <div id="footer">
+        <div id="maintext">
+          <p>Please get in touch we would be happy to answer your questions.</p>
+          
+          <h2><b>Email: hello@openenergymonitor.zendesk.com</h2>
+          <h2><b>Phone:</b> +44(0)1286 800870</h2>
+          <p><b>Address:</b>
+          OpenEnergyMonitor (Megni), Yr Hen Ysgol (Caban Cyf), Brynrefail, Caernarfon, Gwynedd, LL55 3NR, United Kingdom</p>
+          
+          <p>Cymraeg?: Da ni'n siarad Cymraeg, mae'r wefan yma ar gael yn <a href="?lang=cy">gymraeg</a> hefyd.</p>
+
+        </div>
+      </div>
+
+      <div id="box">
+        <div id="maintext">
+          
+          <h2>Eryri/Snowdonia</h2>
+          <img src="images/O7UH.JPG" style="width:930px;"/>
+
+          <p>We are based in the mountains of Eryri (Snowdonia) North Wales and we stayed here because of the mountains, we are keen climbers and mountain bikers. Thanks to the internet we enjoy developing open hardware and software and running a technology business from here too.</p>
+          
+          <p><b>Glyn's blog: </b><a href="https://zerocarbonadventures.co.uk/" >zerocarbonadventures.co.uk</a></p>
+          <p><b>Trystan's blog: </b><a href="https://trystanlea.org.uk/" >trystanlea.org.uk</a></p>
+          <p><b>Twitter: </b><a href="https://twitter.com/trystanlea" >@trystanlea</a>, <a href="https://twitter.com/glynhudson" >@glynhudson</a>, <a href="https://twitter.com/openenergymon" >@openenergymon</a></p>
+          <div style="clear:both;"></div>
+          
+        
+        </div>
+      </div>
+
+    </div>
+</html>
+
+
+
